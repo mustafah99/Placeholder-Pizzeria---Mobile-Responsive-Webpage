@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web&display=swap");
 * {
   max-width: 100%;
+  max-height: 100%;
 }
 
 html,
@@ -165,7 +166,7 @@ main section ol {
   grid-row: 3 / -1;
   grid-column: 1 / -1;
   margin: 0 auto;
-  padding: 0 70px 107% 70px;
+  padding: 0 70px 110% 70px;
 }
 
 main section ol h3 {
