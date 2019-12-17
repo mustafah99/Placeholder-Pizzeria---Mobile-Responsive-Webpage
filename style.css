@@ -165,7 +165,7 @@ main section ol {
   grid-row: 3 / -1;
   grid-column: 1 / -1;
   margin: 0 auto;
-  padding: 0 70px 105% 70px;
+  padding: 0 70px 107% 70px;
 }
 
 main section ol h3 {
@@ -400,6 +400,12 @@ figure picture img:hover {
   font-weight: 900;
   text-shadow: 0px 0px 12px #000;
   cursor: pointer;
+}
+
+.formContainer form button a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
 }
 
 .formContainer form button:hover {

@@ -4,7 +4,7 @@ function initMap() {
     
     // Centering the map on the location.
     let map = new google.maps.Map(
-        document.getElementById('googleMaps'), {zoom: 15, center: helsingborg});
+        document.getElementById('googleMaps'), {zoom: 17, center: helsingborg});
 
     // Setting a marker centered on the location we centered our map on.
     const mapMarker = new google.maps.Marker({position: helsingborg, map: map});
