@@ -271,6 +271,12 @@ main section .listWrapper {
   padding: 0;
 }
 
+@media screen and (max-width: 414px) {
+  main section .listWrapper {
+    padding-left: 10px;
+  }
+}
+
 main section .listWrapper ul {
   padding-bottom: 50px;
 }
