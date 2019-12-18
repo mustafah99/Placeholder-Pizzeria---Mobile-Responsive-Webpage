@@ -5,6 +5,12 @@
   max-width: 100%;
 }
 
+@media screen and (max-width: 414px) {
+  * {
+    max-width: 100%;
+  }
+}
+
 html,
 body {
   height: 100%;
@@ -52,11 +58,19 @@ header {
 header #header {
   padding: 0.5% 2%;
   z-index: 10;
+  position: fixed;
+  left: 0;
 }
 
 header #header img {
   height: auto;
   width: 100px;
+}
+
+@media screen and (max-width: 414px) {
+  header #header img {
+    width: 90px;
+  }
 }
 
 header #header h1 {
@@ -70,7 +84,57 @@ header #header h1 {
   text-transform: uppercase;
 }
 
-header ul {
+header #collapsedNavbar {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 20px;
+  position: fixed;
+  right: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width: 635px) {
+  header #collapsedNavbar {
+    display: none;
+  }
+}
+
+header #collapsedNavbar li {
+  height: 20px;
+  margin-top: 11px;
+  list-style: none;
+}
+
+header #collapsedNavbar li a {
+  display: none;
+  font-family: "Alatsi", sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-shadow: 2px 2px 2px #000;
+  color: white;
+  padding: 0 20px;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+header #collapsedNavbar li:hover {
+  -webkit-transform: scale(1.1) translate(0px, -2px);
+          transform: scale(1.1) translate(0px, -2px);
+  -webkit-transition: all 1s cubic-bezier(0.37, 0.6, 0.55, 1.03);
+  transition: all 1s cubic-bezier(0.37, 0.6, 0.55, 1.03);
+}
+
+header #collapsedNavbar li:hover a {
+  -webkit-transition: all 0.2s cubic-bezier(0.37, 0.6, 0.55, 1.03);
+  transition: all 0.2s cubic-bezier(0.37, 0.6, 0.55, 1.03);
+  color: #ffc20e;
+}
+
+header #topNav {
   margin: 20px;
   margin-left: auto;
   display: -webkit-box;
@@ -82,13 +146,26 @@ header ul {
           flex-direction: row;
 }
 
-header ul li {
+header #topNav li {
   height: 20px;
   margin-top: 11px;
   list-style: none;
 }
 
-header ul li a {
+header #topNav li #icon {
+  font-size: 1.5em;
+  display: none;
+}
+
+@media screen and (max-width: 634px) {
+  header #topNav li #icon {
+    display: block;
+    position: fixed;
+    right: 0;
+  }
+}
+
+header #topNav li a {
   font-family: "Alatsi", sans-serif;
   text-transform: uppercase;
   font-weight: 900;
@@ -98,14 +175,20 @@ header ul li a {
   text-decoration: none;
 }
 
-header ul li:hover {
+@media screen and (max-width: 634px) {
+  header #topNav li a {
+    display: none;
+  }
+}
+
+header #topNav li:hover {
   -webkit-transform: scale(1.1) translate(0px, -2px);
           transform: scale(1.1) translate(0px, -2px);
   -webkit-transition: all 1s cubic-bezier(0.37, 0.6, 0.55, 1.03);
   transition: all 1s cubic-bezier(0.37, 0.6, 0.55, 1.03);
 }
 
-header ul li:hover a {
+header #topNav li:hover a {
   -webkit-transition: all 0.2s cubic-bezier(0.37, 0.6, 0.55, 1.03);
   transition: all 0.2s cubic-bezier(0.37, 0.6, 0.55, 1.03);
   color: #ffc20e;
@@ -122,6 +205,12 @@ main {
   background: linear-gradient(45deg, #490303, #a50707, #5c0c0c);
 }
 
+@media screen and (max-width: 414px) {
+  main {
+    z-index: 10;
+  }
+}
+
 main section {
   display: -ms-grid;
   display: grid;
@@ -135,10 +224,11 @@ main section {
   overflow-y: auto;
 }
 
-main section h2 {
+main section .wrapper {
   margin: 0 auto;
-  -ms-grid-row: 2;
-  grid-row: 2;
+  padding: 0;
+  -ms-grid-row: 1;
+  grid-row: 1;
   grid-column: 1 / -1;
   text-shadow: 0px 0px 12px #000;
   font-size: 3em;
@@ -147,28 +237,44 @@ main section h2 {
   text-transform: uppercase;
 }
 
+main section .wrapper h2 {
+  margin-bottom: 0;
+}
+
 main section button {
-  -ms-grid-row: 1;
-  grid-row: 1;
-  grid-column: 1 / -1;
+  position: fixed;
+  right: 0;
   margin-left: auto;
   padding-right: 2%;
   background: none;
   border: none;
-  font-size: 2em;
+  font-size: 1.5em;
   color: white;
   cursor: pointer;
 }
 
-main section ol {
-  height: 100%;
-  grid-row: 3 / -1;
+main section .listWrapper {
+  -ms-grid-row: 2;
+  grid-row: 2;
   grid-column: 1 / -1;
   margin: 0 auto;
-  padding: 0 70px 110% 70px;
+  padding: 0;
 }
 
-main section ol h3 {
+main section .listWrapper ul {
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 414px) {
+  main section .listWrapper ul {
+    letter-spacing: 0;
+    padding: 0;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+}
+
+main section .listWrapper ul .title {
   letter-spacing: 0.454em;
   margin: 0 auto;
   text-shadow: 0px 0px 12px #000;
@@ -176,22 +282,26 @@ main section ol h3 {
   font-family: "Alatsi", sans-serif;
   text-transform: uppercase;
   text-align: left;
-  font-size: 1.375em;
+  font-size: 1.7em;
+  list-style: none;
 }
 
-main section ol li {
+main section .listWrapper ul li {
   text-align: left;
   font-weight: bold;
+  font-size: 1em;
+  list-style-type: circle;
+  text-shadow: 0px 0px 6px black;
 }
 
-main section ol li span {
+main section .listWrapper ul span {
   font-weight: 900;
   text-shadow: 0px 0px 12px black;
   font-size: 16px;
   letter-spacing: 0.005em;
 }
 
-main section ol li #vegetariana {
+main section .listWrapper ul #vegetariana {
   font-weight: bold;
   text-shadow: none;
   letter-spacing: normal;
@@ -209,7 +319,7 @@ main section ol li #vegetariana {
   background: linear-gradient(45deg, #490303, #a50707, #5c0c0c);
 }
 
-#contactUs section {
+#contactUs .container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[12];
@@ -221,10 +331,26 @@ main section ol li #vegetariana {
   max-width: 100%;
 }
 
-#contactUs section h2 {
+#contactUs .container button {
+  position: fixed;
+  right: 0;
+  margin-left: auto;
+  padding-right: 2%;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  color: white;
+  cursor: pointer;
+}
+
+#contactUs .container .wrapper {
   -ms-grid-row: 2;
   grid-row: 2;
   grid-column: 1 / -1;
+  margin: 0 auto;
+}
+
+#contactUs .container .wrapper h2 {
   text-shadow: 0px 0px 12px #000;
   font-size: 3em;
   color: white;
@@ -233,26 +359,13 @@ main section ol li #vegetariana {
   margin: 0 auto;
 }
 
-#contactUs section button {
-  -ms-grid-row: 1;
-  grid-row: 1;
-  grid-column: 1 / -1;
-  margin-left: auto;
-  padding-right: 2%;
-  background: none;
-  border: none;
-  font-size: 2em;
-  color: white;
-  cursor: pointer;
-}
-
-#contactUs section ul {
+#contactUs .container ul {
   grid-row: 3 / -1;
   grid-column: 1 / -1;
   padding: 0;
 }
 
-#contactUs section ul h3 {
+#contactUs .container ul .title {
   letter-spacing: 0.454em;
   margin: 0 auto;
   text-shadow: 0px 0px 12px #000;
@@ -263,13 +376,13 @@ main section ol li #vegetariana {
   font-size: 1.375em;
 }
 
-#contactUs section ul li {
+#contactUs .container ul li {
   text-align: center;
   font-weight: bold;
   list-style-type: none;
 }
 
-#contactUs section ul a {
+#contactUs .container ul a {
   text-decoration: none;
   color: white;
 }
@@ -297,7 +410,7 @@ main section ol li #vegetariana {
   max-width: 100%;
 }
 
-#findUs section h2 {
+#findUs section .wrapper {
   -ms-grid-row: 2;
   grid-row: 2;
   grid-column: 1 / -1;
@@ -310,14 +423,13 @@ main section ol li #vegetariana {
 }
 
 #findUs section button {
-  -ms-grid-row: 1;
-  grid-row: 1;
-  grid-column: 1 / -1;
+  position: fixed;
+  right: 0;
   margin-left: auto;
   padding-right: 2%;
   background: none;
   border: none;
-  font-size: 2em;
+  font-size: 1.5em;
   color: white;
   cursor: pointer;
 }
@@ -336,7 +448,7 @@ main section ol li #vegetariana {
   -ms-grid-row: 6;
   grid-row: 6;
   grid-column: 1 / -1;
-  padding: 0;
+  padding: 0 0 30px 0;
 }
 
 #findUs section ul h3 {
@@ -431,7 +543,8 @@ article p {
   margin: 12px 0 1% 0;
 }
 
-article h2, article p {
+article h2,
+article p {
   text-shadow: 2px 1px 3px #000;
 }
 
@@ -517,7 +630,7 @@ footer ul li:hover:nth-of-type(1) a {
 footer ul li:hover:nth-of-type(2) a {
   -webkit-transition: all 0.4s cubic-bezier(0.37, 0.6, 0.55, 1.03);
   transition: all 0.4s cubic-bezier(0.37, 0.6, 0.55, 1.03);
-  color: #1DA1F2;
+  color: #1da1f2;
 }
 
 footer ul li:hover:nth-of-type(3) a {

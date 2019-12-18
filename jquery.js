@@ -1,9 +1,9 @@
-$(document).ready(function() {
-    $('#menuToggle').click(function() {
+$(document).ready(function () {
+    $('.menuToggle').click(function () {
         $('#menuId').fadeToggle(500);
         $('#contactUs').fadeOut(500);
-    }).on('keyup', function(evt) {
-        if(evt.keyCode == 27) {
+    }).on('keyup', function (evt) {
+        if (evt.keyCode == 27) {
             $('#menuId').fadeOut(300);
         }
     })
@@ -11,10 +11,10 @@ $(document).ready(function() {
         $('#menuId').fadeToggle(500);
     })
 
-    $('#contactToggle').click(() => {
+    $('.contactToggle').click(() => {
         $('#contactUs').fadeToggle(500);
     }).on('keyup', function (evt) {
-        if(evt.keyCode == 27) {
+        if (evt.keyCode == 27) {
             $('#contactUs').fadeToggle(300);
         }
     })
@@ -22,7 +22,7 @@ $(document).ready(function() {
         $('#contactUs').fadeToggle(500);
     })
 
-    $('#findUsToggle').click(() => {
+    $('.findUsToggle').click(() => {
         $('#findUs').fadeToggle(500);
         $('#contactUs').fadeOut(500);
     }).on('keyup', function (evt) {
@@ -33,5 +33,9 @@ $(document).ready(function() {
 
     $('#closeMaps').click(() => {
         $('#findUs').fadeToggle(500);
+    })
+
+    $('#icon').click(() => {
+        $('.collapsedNavbarIcon').fadeToggle(300);
     })
 });
