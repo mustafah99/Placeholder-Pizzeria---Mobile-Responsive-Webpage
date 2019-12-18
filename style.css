@@ -73,7 +73,7 @@ header #header img {
 
 @media screen and (max-width: 414px) {
   header #header img {
-    width: 90px;
+    display: none;
   }
 }
 

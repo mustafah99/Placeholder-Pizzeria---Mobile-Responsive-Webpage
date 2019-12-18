@@ -91,7 +91,7 @@ header {
       height: auto;
       width: 100px;
       @include iPhone() {
-        width: 90px;
+        display: none;
       }
     }
     h1 {
