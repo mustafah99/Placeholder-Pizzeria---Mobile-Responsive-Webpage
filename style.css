@@ -11,6 +11,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   height: 100%;
@@ -241,6 +245,12 @@ main section .wrapper h2 {
   margin-bottom: 0;
 }
 
+@media screen and (max-width: 414px) {
+  main section .wrapper h2 {
+    font-size: 1.2em;
+  }
+}
+
 main section button {
   position: fixed;
   right: 0;
@@ -286,12 +296,24 @@ main section .listWrapper ul .title {
   list-style: none;
 }
 
+@media screen and (max-width: 414px) {
+  main section .listWrapper ul .title {
+    font-size: 1.2em;
+  }
+}
+
 main section .listWrapper ul li {
   text-align: left;
   font-weight: bold;
   font-size: 1em;
   list-style-type: circle;
   text-shadow: 0px 0px 6px black;
+}
+
+@media screen and (max-width: 414px) {
+  main section .listWrapper ul li {
+    font-size: 1em;
+  }
 }
 
 main section .listWrapper ul span {
@@ -311,12 +333,24 @@ main section .listWrapper ul #vegetariana {
 #contactUs {
   display: none;
   position: fixed;
-  height: 350px;
+  height: 310px;
   top: 25%;
   left: 0;
   right: 0;
   z-index: 5;
   background: linear-gradient(45deg, #490303, #a50707, #5c0c0c);
+}
+
+@media screen and (max-width: 678px) {
+  #contactUs {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  #contactUs {
+    height: 350px;
+  }
 }
 
 #contactUs .container {
@@ -359,6 +393,12 @@ main section .listWrapper ul #vegetariana {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 414px) {
+  #contactUs .container .wrapper h2 {
+    font-size: 2.8em;
+  }
+}
+
 #contactUs .container ul {
   grid-row: 3 / -1;
   grid-column: 1 / -1;
@@ -398,6 +438,12 @@ main section .listWrapper ul #vegetariana {
   background: linear-gradient(45deg, #490303, #a50707, #5c0c0c);
 }
 
+@media screen and (max-width: 414px) {
+  #findUs {
+    z-index: 10;
+  }
+}
+
 #findUs section {
   display: -ms-grid;
   display: grid;
@@ -422,6 +468,16 @@ main section .listWrapper ul #vegetariana {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 414px) {
+  #findUs section .wrapper {
+    font-size: 2.7em;
+  }
+}
+
+#findUs section .wrapper h2 {
+  margin-bottom: 0;
+}
+
 #findUs section button {
   position: fixed;
   right: 0;
@@ -436,12 +492,24 @@ main section .listWrapper ul #vegetariana {
 
 #findUs section figure {
   width: 100%;
-  height: 600px;
-  -ms-grid-row: 5;
-  grid-row: 5;
+  height: 550px;
+  -ms-grid-row: 3;
+  grid-row: 3;
   grid-column: 1 / -1;
   border-top: 3px solid white;
   border-bottom: 3px solid white;
+}
+
+@media screen and (max-width: 414px) {
+  #findUs section figure {
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 634px) {
+  #findUs section figure {
+    height: 450px;
+  }
 }
 
 #findUs section ul {
