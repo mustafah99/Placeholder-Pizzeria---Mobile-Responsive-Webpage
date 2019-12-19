@@ -46,7 +46,7 @@
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -237,7 +237,7 @@ main {
       margin: 0 auto;
       padding: 0;
       @include iPhone() {
-          padding-left: 10px;
+        padding-left: 10px;
       }
       ul {
         padding-bottom: 50px;
@@ -301,7 +301,7 @@ main {
     height: 350px;
   }
   @include iPhone() {
-      height: 350px;
+    height: 350px;
   }
   .container {
     display: grid;
@@ -422,14 +422,14 @@ main {
         height: 450px;
       }
       @include collapse() {
-          height: 450px;
+        height: 450px;
       }
     }
     ul {
       grid-row: 6;
       grid-column: 1 / -1;
       padding: 0 0 30px 0;
-      h3 {
+      .title {
         letter-spacing: 0.454em;
         margin: 0 auto;
         text-shadow: 0px 0px 12px #000;
@@ -437,7 +437,11 @@ main {
         @include aI();
         text-transform: uppercase;
         text-align: center;
-        font-size: 1.375em;
+        font-size: 1.7em;
+        list-style: none;
+        @include iPhone() {
+          font-size: 1.2em;
+        }
       }
       li {
         text-align: center;

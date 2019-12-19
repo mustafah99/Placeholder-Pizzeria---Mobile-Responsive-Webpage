@@ -525,7 +525,7 @@ main section .listWrapper ul #vegetariana {
   padding: 0 0 30px 0;
 }
 
-#findUs section ul h3 {
+#findUs section ul .title {
   letter-spacing: 0.454em;
   margin: 0 auto;
   text-shadow: 0px 0px 12px #000;
@@ -533,7 +533,14 @@ main section .listWrapper ul #vegetariana {
   font-family: "Alatsi", sans-serif;
   text-transform: uppercase;
   text-align: center;
-  font-size: 1.375em;
+  font-size: 1.7em;
+  list-style: none;
+}
+
+@media screen and (max-width: 414px) {
+  #findUs section ul .title {
+    font-size: 1.2em;
+  }
 }
 
 #findUs section ul li {
