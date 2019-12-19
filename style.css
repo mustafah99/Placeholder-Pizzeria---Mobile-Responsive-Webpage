@@ -215,6 +215,12 @@ main {
   }
 }
 
+@media screen and (max-width: 534px) {
+  main {
+    z-index: 10;
+  }
+}
+
 main section {
   display: -ms-grid;
   display: grid;
@@ -248,6 +254,79 @@ main section .wrapper h2 {
 @media screen and (max-width: 414px) {
   main section .wrapper h2 {
     font-size: 1.2em;
+  }
+}
+
+main section .wrapper nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 688px) {
+  main section .wrapper nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+main section .wrapper nav ul li {
+  list-style: none;
+}
+
+main section .wrapper nav ul li a {
+  font-size: 0.5em;
+  padding: 0 28px;
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+}
+
+@media screen and (max-width: 1011px) {
+  main section .wrapper nav ul li a {
+    padding: 0 10px;
+    font-size: 0.5em;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  main section .wrapper nav ul li a {
+    padding: 0 5px;
+    font-size: 0.5em;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  main section .wrapper nav ul li a {
+    padding: 0 4px;
+    font-size: 0.45em;
+  }
+}
+
+@media screen and (max-width: 688px) {
+  main section .wrapper nav ul li a {
+    display: none;
+  }
+}
+
+main section .wrapper nav ul li i {
+  display: none;
+  font-size: 0.8em;
+  padding-bottom: 6.5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 688px) {
+  main section .wrapper nav ul li i {
+    display: block;
   }
 }
 
@@ -450,6 +529,12 @@ main section .listWrapper ul #vegetariana {
   }
 }
 
+@media screen and (max-width: 534px) {
+  #findUs {
+    z-index: 10;
+  }
+}
+
 #findUs section {
   display: -ms-grid;
   display: grid;
@@ -498,24 +583,12 @@ main section .listWrapper ul #vegetariana {
 
 #findUs section figure {
   width: 100%;
-  height: 550px;
+  height: 450px;
   -ms-grid-row: 3;
   grid-row: 3;
   grid-column: 1 / -1;
   border-top: 3px solid white;
   border-bottom: 3px solid white;
-}
-
-@media screen and (max-width: 414px) {
-  #findUs section figure {
-    height: 450px;
-  }
-}
-
-@media screen and (max-width: 634px) {
-  #findUs section figure {
-    height: 450px;
-  }
 }
 
 #findUs section ul {

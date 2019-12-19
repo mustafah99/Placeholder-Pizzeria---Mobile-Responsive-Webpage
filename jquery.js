@@ -38,4 +38,8 @@ $(document).ready(function () {
     $('#icon').click(() => {
         $('.collapsedNavbarIcon').fadeToggle(300);
     })
+
+    $('#menuOptions').click(() => {
+        $('.menuOptions').fadeToggle(300);
+    })
 });
