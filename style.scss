@@ -43,6 +43,12 @@
     @content;
   }
 }
+
+@mixin breakpoint3 {
+  @media screen and (max-width: 1032px) {
+    @content;
+  }
+}
 @mixin breakNav2 {
   @media screen and (max-width: 830px) {
     @content;
@@ -62,6 +68,17 @@
 
 @mixin breakNav4 {
   @media screen and (max-width: 688px) {
+    @content;
+  }
+}
+
+@mixin breakpoint {
+  @media screen and (max-width: 430px) {
+    @content;
+  }
+}
+@mixin breakpoint2 {
+  @media screen and (max-width: 404px) and (min-width: 375px) {
     @content;
   }
 }
@@ -258,6 +275,7 @@ main {
           padding: 0;
           @include breakNav4() {
             flex-direction: column;
+            padding: 0 0 10px 0;
           }
           li {
             list-style: none;
@@ -316,12 +334,50 @@ main {
         padding-left: 10px;
       }
       ul {
+        padding: 0;
         padding-bottom: 50px;
         @include iPhone() {
           letter-spacing: 0;
           padding: 0;
-          padding-left: 22px;
-          padding-right: 22px;
+          padding-left: 30px;
+        }
+        @include breakpoint3() {
+          padding-left: 30px;
+        }
+        @include breakpoint() {
+          padding: 0;
+          padding-left: 25px;
+          margin: 0 auto;
+        }
+        @include breakpoint2() {
+          padding: 0;
+          margin: 0 auto;
+          max-width: 330px;
+        }
+        .categoryHeader {
+          letter-spacing: 0.454em;
+          margin: 0 auto;
+          text-shadow: 0px 0px 12px #000;
+          color: white;
+          @include aI();
+          text-transform: uppercase;
+          text-align: center;
+          font-size: 2.8em;
+          list-style: none;
+          @include iPhone() {
+            font-size: 1em;
+            padding-right: 30px;
+          }
+          @include breakpoint3() {
+            padding-right: 30px;
+          }
+          @include breakpoint() {
+            padding-right: 25px;
+          }
+
+          @include displayNone() {
+            font-size: 2em;
+          }
         }
         .title {
           letter-spacing: 0.454em;
@@ -341,7 +397,7 @@ main {
           text-align: left;
           font-weight: bold;
           font-size: 1em;
-          list-style-type: circle;
+          list-style-type: square;
           text-shadow: 0px 0px 6px black;
           @include iPhone() {
             font-size: 1em;
