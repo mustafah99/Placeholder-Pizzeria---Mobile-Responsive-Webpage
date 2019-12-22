@@ -387,7 +387,7 @@ main section .listWrapper ul {
 @media screen and (max-width: 416px) {
   main section .listWrapper ul {
     padding: 0;
-    padding-left: 24px;
+    padding-left: 20px;
     margin: 0 auto;
   }
 }
