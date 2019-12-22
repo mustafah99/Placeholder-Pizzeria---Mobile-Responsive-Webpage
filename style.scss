@@ -20,6 +20,13 @@
   }
 }
 
+@mixin ffivteen {
+  @media screen and (max-width: 416px) {
+    @content;
+  }
+}
+
+
 @mixin collapse {
   @media screen and (max-width: 634px) {
     @content;
@@ -349,6 +356,12 @@ main {
           padding-left: 25px;
           margin: 0 auto;
         }
+        @include ffivteen() {
+          padding: 0;
+          padding-left: 24px;
+          margin: 0 auto;
+        }
+
         @include breakpoint2() {
           padding: 0;
           margin: 0 auto;
