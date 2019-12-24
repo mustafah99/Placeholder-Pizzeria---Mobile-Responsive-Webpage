@@ -26,7 +26,6 @@
   }
 }
 
-
 @mixin collapse {
   @media screen and (max-width: 634px) {
     @content;
@@ -86,6 +85,12 @@
 }
 @mixin breakpoint2 {
   @media screen and (max-width: 404px) and (min-width: 375px) {
+    @content;
+  }
+}
+
+@mixin matePro {
+  @media screen and (min-width: 359px) and (max-width: 375px) and (min-height: 779px) and (max-height: 781px) {
     @content;
   }
 }
@@ -343,6 +348,10 @@ main {
       ul {
         padding: 0;
         padding-bottom: 50px;
+        @include matePro() {
+          padding-left: 15px !important;
+          font-size: .8em;
+        }
         @include iPhone() {
           letter-spacing: 0;
           padding: 0;
@@ -377,6 +386,9 @@ main {
           text-align: center;
           font-size: 2.8em;
           list-style: none;
+          @include matePro() {
+            padding-right: 15px !important;
+          }
           @include iPhone() {
             font-size: 1em;
             padding-right: 30px;
