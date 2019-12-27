@@ -95,11 +95,22 @@
   }
 }
 
+@mixin breakPointPoint {
+  @media screen and (min-height: 650px) and (max-height: 754px) {
+    @content;
+  }
+}
+
 * {
   max-width: 100%;
   @include iPhone() {
     max-width: 100%;
   }
+}
+
+.rotateZ {
+  transform: rotate(180deg);
+  transition: all 1s cubic-bezier(0.37, 0.6, 0.55, 1.03);
 }
 
 html {
@@ -578,11 +589,18 @@ main {
       grid-column: 1 / -1;
       border-top: 3px solid white;
       border-bottom: 3px solid white;
+      @include matePro() {
+        height: 350px;
+      }
+      @include breakPointPoint() {
+        height: 350px !important;
+      }
     }
     ul {
       grid-row: 6;
       grid-column: 1 / -1;
       padding: 0 0 30px 0;
+      margin-top: 0;
       .title {
         letter-spacing: 0.454em;
         margin: 0 auto;

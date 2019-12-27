@@ -37,6 +37,8 @@ $(document).ready(function () {
 
     $('#icon').click(() => {
         $('.collapsedNavbarIcon').fadeToggle(300);
+        $('#iconA').toggleClass('fa-arrow-circle-left');
+        $('#iconA').toggleClass('fa-times-circle');
     })
 
     $('#menuOptions').click(() => {
