@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Placeholder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="mask">
+
+    </div>
+    <header>
+        <div id="header">
+            <a href="index.html"><img src="images/Pizza-logo-design-template-Vector-PNG.png" alt="Pizzeria Logo"></a>
+        </div>
+        <ul id="topNav">
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="#" class="menuToggle">Meny</a></li>
+            <li><a href="#" class="findUsToggle">Hitta Hit</a></li>
+            <li><a href="#" class="contactToggle">Kontakt & Öppettider</a></li>
+            <li>
+                <a href="javascript:void(0);" id="icon" onclick="myFunction()">
+                    <i id="iconA" class="fa fa fa-bars" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+        <ul id="collapsedNavbar">
+            <li><a class="collapsedNavbarIcon" href="index.html">
+                    <i class="fa fa-home"></i>
+                </a></li>
+            <li><a class="collapsedNavbarIcon menuToggle" href="#">
+                    <i class='fa fa-cutlery'></i>
+                </a></li>
+            <li><a class="collapsedNavbarIcon findUsToggle" href="#">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                </a></li>
+            <li><a class="collapsedNavbarIcon contactToggle" href="#">
+                    <i class="fa fa-address-card" aria-hidden="true"></i>
+                </a></li>
+        </ul>
+    </header>
+    <main id="menuId">
+        <section>
+            <button id="closeMenu" aria-label="Close Menu">&times;</button>
+            <div class="wrapper">
+                <h2>Vår Meny</h2>
+                <nav>
+                    <ul>
+                        <li>
+                            <i id="menuOptions" class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                            <a class="menuOptions" href="#pizzas">Pizzor</a>
+                        </li>
+                        <li>
+                            <a class="menuOptions" href="#platesBurger">Tallrikar & Hamburgare</a>
+                        </li>
+                        <li>
+                            <a class="menuOptions" href="#bakedPotato">Bakat Potatis</a>
+                        </li>
+                        <li>
+                            <a class="menuOptions" href="#carte">A La Carté</a>
+                        </li>
+                        <li>
+                            <a class="menuOptions" href="#vegan">Veganskt</a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+            <div class="listWrapper">
+                <ul>
+                    <li id="pizzas" class="categoryHeader">Pizzor</li>
+                    <li class="title">Standardpizzor I - Standard / Familj</li>
+                    <li>Margherita - Tomat, Ost <span>69:- / 169:-</span></li>
+                    <li>Al Fungi - Champinjoner <span>69:- / 175:-</span></li>
+                    <li class="title">Standardpizzor II - Standard / Familj</li>
+                    <li>Vesuvio - Skinka <span>75:- / 179:-</span></li>
+                    <li>Catarina - Räkor <span>80:- / 185:-</span></li>
+                    <li>Hawaii - Skinka, Ananas <span>75:- / 179:-</span></li>
+                    <li>Capricciosa - Skinka, Champinjoner <span>75:- / 179:-</span></li>
+                    <li>Bari - Salami, Lök <span>75:- / 179:-</span></li>
+                    <li class="title">Standardpizzor III - Standard / Familj</li>
+                    <li>Capri - Skinka, Räkor <span>89:- / 195:-</span></li>
+                    <li>Marinara - Räkor, Musslor <span>89:- / 195:-</span></li>
+                    <li>Manotova - Skinka, Ananas, Banan, Curry <span>89:- / 195:-</span></li>
+                    <li>Napoli - Skinka, Räkor, Ananas <span>89:- / 195:-</span></li>
+                    <li>La Bamba - Räkor, Ananas, Banan, Curry <span>89:- / 195:-</span></li>
+                    <li>Jamaica - Skinka, Räkor, Champinjoner <span>89:- / 195:-</span></li>
+                    <li>La Mare - Skinka, Räkor, Ananas, Champinjoner <span>89:- / 195:-</span></li>
+                    <li>Quattro Stagione - Skinka, Räkor, Musslor, Champinjoner, Kronärtskockor <span>89:- /
+                            195:-</span>
+                    </li>
+                    <li>Firo - Räkor, Champinjoner, Gorgonzola <span>89:- / 195:-</span></li>
+                    <li>Salami Special - Salami, Paprika, Oliver, Feferoni, Färsk Tomat <span>89:- / 195:-</span></li>
+                    <li>La Mafia - Lök, Skinka, Stark korv, Svartpeppar, Vitlök, Bearnaisesås <span>89:- / 195:-</span>
+                    </li>
+                    <li>Zlatan - Färsk paprika, Champinjoner, Lök, Stark korv, Bearnaisesås <span>89:- / 195:-</span>
+                    </li>
+                    <li class="title">Bacon Pizzor - Standard / Familj</li>
+                    <li>Belinda - Bacon, Ägg, Lök <span>89:- / 210:-</span></li>
+                    <li>Bergamo - Bacon, Ägg, Salami, Lök <span>89:- / 210:-</span></li>
+                    <li>John Blund - Bacon, Ägg, Skinka, Lök, Champinjoner <span>89:- / 210:-</span></li>
+                    <li>Thai - Bacon, Ägg, Räkor, Ananas, Curry <span>89:- / 210:-</span></li>
+                    <li>Sole Mio - Bacon, Ägg, Skinka, Lök, Cayennepeppar <span>89:- / 210:-</span></li>
+                    <li>Floransa - Bacon, Kyckling, Lök, Färsk tomat, Bearnaisesås <span>89:- / 210:-</span></li>
+                    <li class="title">Kyckling Pizzor - Standard / Familj</li>
+                    <li>Prima - Kyckling, Räkor, Banan, Curry <span>89:- / 220:-</span></li>
+                    <li>Indiano - Kyckling, Lök, Feferoni, Färsk Tomat, Cayennepeppar <span>89:- / 220:-</span></li>
+                    <li>Ravena - Kyckling, Räkor, Bacon <span>89:- / 220:-</span></li>
+                    <li>Tropicana - Kyckling, Skinka, Banan, Curry <span>89:- / 220:-</span></li>
+                    <li>Sara Special - Kyckling, Ananas, Banan, Curry <span>89:- / 220:-</span></li>
+                    <li>Monte Carlo - Kyckling, Jordnötter, Curry <span>89:- / 220:-</span></li>
+                    <li>Suat - Kyckling, Paprika, Färsk Tomat, Bearnaisesås <span>89:- / 220:-</span></li>
+                    <li>Messi - Kyckling, Skinka, Bearnaisesås <span>89:- / 220:-</span></li>
+                    <li>Zidane Special - Kyckling, Champinjoner, Pommes, Cayennepeppar, Vitlöksås <span>99:- /
+                            240:-</span>
+                    </li>
+                    <li>King Pizza - Kyckling, Isbergssallad, Tomat, Gurka, Feferoni, Sås <span>99:- / 240:-</span></li>
+                    <li class="title">Mexikanska Pizzor - Standard / Familj</li>
+                    <li>Acapulo - Oxfilé, Champinjoner, Lök, Jalapeño, Färsk Tomat, Tacosås (Sås) <span>99:- /
+                            240:-</span>
+                    </li>
+                    <li>Azteka - Skinka, Jalapeño, Tacosås, Taco, Kryddmix (Sås) <span>89:- / 220:-</span></li>
+                    <li>Taco Amigo - Köttfärs, Jalapeño, Lök, Tacosås, Färsk Vitlök (Sås) <span>89:- / 220:-</span></li>
+                    <li>Mexicana - Skinka, Köttfärs, Jalapeño, Lök, Färsk Vitlök, Tacosås (Sås) <span>89:- /
+                            220:-</span>
+                    </li>
+                    <li>Michelangelo - Skinka, Räkor, Jalapeño, Lök, Färsk Vitlök (Sås) <span>89:- / 220:-</span></li>
+                    <li class="title">Oxfilé Pizzor - Standard / Familj</li>
+                    <li>Romana - Oxfilé, Lök, Champinjoner, Bearnaisesås <span>99:- / 239:-</span></li>
+                    <li>Venezia - Oxfilé, Lök, Färsk Tomat, Färsk Vitlök, Bearnaisesås <span>99:- / 239:-</span></li>
+                    <li>Napolitana - Oxfilé, Ananas, Gorgonzola, Bearnaisesås <span>99:- / 239:-</span></li>
+                    <li>Venedig - Oxfilé, Skinka, Bearnaisesås <span>99:- / 239:-</span></li>
+                    <li>Juventus - Oxfilé, Salami, Lök, Champinjoner, Bearnaisesås <span>99:- / 239:-</span></li>
+                    <li>Kanteralla - Oxfilé, Kantareller, Lök, Gorgonzola, Bearnaisesås <span>99:- / 239:-</span></li>
+                    <li>Cleopatra - Oxfilé, Lök, Färsk Tomat, Feferoni, Cayennepeppar, Bearnaisesås <span>99:- /
+                            239:-</span></li>
+                    <li>Bella - Oxfilé, Räkor, Lök, Färsk Tomat, Paprika, Cayennepeppar, Bearnaisesås <span>99:- /
+                            239:-</span></li>
+                    <li class="title">Kebab Pizzor - Standard / Familj</li>
+                    <li>Kebab Pizza - Lök, Champinjoner, Feferoni & (Sås) <span>90:- / 220:-</span></li>
+                    <li>Pommes Pizza - Kebab, Pommes & (Sås) <span>99:- / 240:-</span></li>
+                    <li>Grönsaks Pizza - Kebab, Lök, Färska Grönsaker & (Sås) <span>99:- / 240:-</span></li>
+                    <li>Dynamit - Kebab, Salami, Lök, Feferoni, Valfri Sås <span>99:- / 240:-</span></li>
+                    <li>Denniz - Kebab, Färska Tomater, Bacon, Jalapeño, Valfri Sås <span>99:- / 240:-</span></li>
+                    <li>Amigo - Kebab, Färska Tomater, Bearnaisesås <span>99:- / 240:-</span></li>
+                    <li>Viktoria - Kebab, Köttfärs, Färska Tomater, Bearnaisesås <span>99:- / 240:-</span></li>
+                    <li>Hot Pizza - Kebab, Cayennepeppar, Jalapeño, Soltorkade Tomater, Valfri Sås <span>99:- /
+                            240:-</span>
+                    </li>
+                    <li>De Niro - Kebab, Fetaost, Färska Grönsaker <span>99:- / 240:-</span></li>
+                    <li>Am - Skinka, Kebab, Valfri Sås <span>99:- / 240:-</span></li>
+                    <li class="title">Halvinbakade / Inbakade Pizzor</li>
+                    <li>Calzone - Skinka <span>80:-</span></li>
+                    <li>Adams Special - Skinka, Köttfärs <span>89:-</span></li>
+                    <li>Calzone Frukt - Skinka, Banan, Ananas <span>89:-</span></li>
+                    <li>Calzone Special - Skinka, Räkor <span>89:-</span></li>
+                    <li>Kung Calzone - Skinka, Räkor, Champinjoner <span>90:-</span></li>
+                    <li>Kvarn - Kebab, Champinjoner, Lök, Paprika & (Sås) <span>90:-</span></li>
+                    <li>Stanbul - Oxfilé, Lök, Paprika, Champinjoner, Bearnaisesås <span>90:-</span></li>
+                    <li class="title">Mozzarella Pizzor - Standard / Familj</li>
+                    <li>Dr Special - Oxfilé, Mozzarella, Färst Tomat, Pesto <span>119:- / 289:-</span></li>
+                    <li>Mona Lisa - Mozzarella, Oxfilé, Ruccola, Kantareller <span>119:- / 289:-</span></li>
+                    <li>Milano - Mozzarella, Kyckling, Tigerräkor, Ananas, Valfri Sås <span>119:- / 289:-</span></li>
+                    <li>HIF - Mozzarella, Lax, Färsk vitlök, Ruccola, Citron <span>119:- / 289:-</span></li>
+                    <li>Yudi - Mozzarella, Tiger räkor, Färsk v itlök, Paprika, Ruccola, Citron <span>119:- /
+                            289:-</span>
+                    </li>
+                    <li>Naturen - Mozzarella, Champinjoner, Falafel, Soltorkaded tomater, Ruccola <span>119:- /
+                            289:-</span>
+                    </li>
+                    <li>Toscana - Mozzarella, Soltorkade tomater, Fetaost, Salami, Ruccola <span>119:- / 289:-</span>
+                    </li>
+                    <li>Sydney - Mozzarella, Soltorkade tomater, Oxfilé, Kyckling, Ruccola <span>119:- / 289:-</span>
+                    </li>
+                    <li>Barca - Mozzarella, Bacon, Soltorkade tomater, Köttfärs, Ruccola <span>119:- / 289:-</span></li>
+                    <li>Dubai - Mozzarella, Majs, Soltorkade tomater, Ruccola, Avokado, Tzatzikisås <span>119:- /
+                            289:-</span></li>
+                    <li>Latino - Mozzarella, Tigerräkor, Musslor, Soltorkade tomater, Paprika, Ruccola <span>119:- /
+                            289:-</span></li>
+                    <li>Palmero - Mozzarella, Bacon, Soltorkade tomater, Salami, Ägg <span>119:- / 289:-</span></li>
+                    <li class="title">Köttfärspizzor - Standard / Familj</li>
+                    <li>Bolognese - Köttfärs, Lök, Färsk Vitlök <span>79:- / 195:-</span></li>
+                    <li>Dallas - Köttfärs, Paprika, Champinjoner <span>89:- / 200:-</span></li>
+                    <li>Disco - Skinka, Räkor, Köttfärs <span>89:- / 200:-</span></li>
+                    <li>Adam - Salami, Köttfärs, Lök, Cayennepeppar <span>89:- / 200:-</span></li>
+                    <li>Italia - Skinka, Salami, Köttfärs, Lök, Cayennepeppar <span>89:- / 200:-</span></li>
+                    <li>Messino - Salami, Köttfärs, Gorgonzola <span>99:- / 240:-</span></li>
+                    <li>Italia Special - Skinka, Salami, Köttfärs, Lök, Bearnaisesås, Cayennepeppar <span>99:- /
+                            240:-</span></li>
+                    <li class="title">Vegetariska Pizzor - Standard / Familj</li>
+                    <li>Africana - Banan, Ananas, Jordnötter, Curry <span>89:- / 190:-</span></li>
+                    <li>Vegetariana - Champinjoner, Lök, Paprika, Majs, Oliver, Kronärtskocka, Ananas <span>89:- /
+                            200:-</span></li>
+                    <li>Nour - Isbergssallad, Tomat, Gurka, Majs, Lök, Feferoni, Mildsås <span>89:- / 200:-</span></li>
+                    <li>Teater - Isbergssallad, Pommes, Sås, Tomat, Gurka, Majs <span>99:- / 240:-</span></li>
+                    <li>Vegetariana Special - <span id="vegetariana">Mozzarella, Champinjoner, Lök, Paprika, Oliver,
+                            Kronärtskocka, Färska Tomater, Broccoli, Gorgonzola </span><span>110:- / 250:-</span></li>
+                    <li class="title">Tonfisk Pizzor - Standard / Familj</li>
+                    <li>Al Tono - Tonfisk <span>80:- / 190:-</span></li>
+                    <li>Roma - Räkor, Tonfisk <span>89:- / 210:-</span></li>
+                    <li>Pescatore - Tonfisk, Räkor, Ananas <span>90:- / 210:-</span></li>
+                    <li>Bambino - Skinka, Tonfisk <span>90:- / 210:-</span></li>
+                    <li>Bahriye Special - Champinjoner, Paprika, Räkor, Tonfisk, Oliver, Sås <span>99:- / 240:-</span>
+                    </li>
+                    <li>Mete Special - Tonfisk, Räkor, Isbergssallad, Tomat, Gurka, Feferoni, Sås <span>99:- /
+                            240:-</span>
+                    </li>
+                    <li id="platesBurger" class="categoryHeader">Tallrikar & Hamburgare</li>
+
+                    <li id="bakedPotato" class="categoryHeader">Bakat Potatis</li>
+
+                    <li id="carte" class="categoryHeader">A La Carté</li>
+
+                    <li id="vegan" class="categoryHeader">Veganskt</li>
+
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <div id="contactUs">
+        <div class="container">
+            <button id="closeContact" aria-label="Close Menu">&times;</button>
+
+            <div class="wrapper">
+                <h2>Våra Kontakter & Öppettider</h2>
+            </div>
+            <ul>
+                <li class="title">Adress</li>
+                <li>Roskildegatan 4, Helsingborg 252 21</li>
+                <li class="title">Telefon</li>
+                <li>
+                    <a href="tel:042-140900">042 - 14 09 00</a><a href="tel:042-140975">| 042 - 14 09 75</a>
+                </li>
+                <li class="title">Öppettider</li>
+                <li>Måndag-Torsdag & Söndag 11-00</li>
+                <li>Fredag-Lördag 11-01</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="findUs">
+        <section>
+            <button id="closeMaps" aria-label="Close Menu">&times;</button>
+            <div class="wrapper">
+                <h2>Hitta Hit</h2>
+            </div>
+            <figure id="googleMaps">
+            </figure>
+            <ul>
+                <li class="title">Adress</li>
+                <li>Roskildegatan 4, Helsingborg 252 21</li>
+            </ul>
+        </section>
+    </div>
+    <figure>
+        <picture>
+            <img src="/images/Pizza-logo-design-template-Vector-PNG.png" alt="Pizzeria Logo">
+        </picture>
+    </figure>
+    <div class="formContainer">
+        <form>
+            <button>
+                <a href="https://bit.ly/2YU5bFV" target="_blank">Beställ Hem</a>
+            </button>
+        </form>
+    </div>
+    <article>
+        <h2><strong>Vilka vi är &#10084; &#127829;</strong></h2>
+        <p>Vi driver en underbar pizzeria mitt i hjärtat av Helsingborg! Vi har tillagat pizzor i flera år och siktar
+            alltid på att ge våra kära kunder en god och varm upplevelse. Välkommen in!</p>
+        <!-- <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Our Address</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav> -->
+    </article>
+    <footer>
+        <section>
+            <small>Animimo Design &copy;</small>
+        </section>
+        <ul>
+            <li><a href="https://www.facebook.com/cleopatrahelsingborg" class="fa fa-facebook" target="_blank"></a></li>
+            <li><a href="#" class="fa fa-twitter"></a></li>
+            <li><a href="#" class="fa fa-snapchat"></a></li>
+            <li><a href="#" class="fa fa-instagram"></a></li>
+        </ul>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCNhke0lSL-ji2W8RLRKDm4UeeC25p5vY&callback=initMap"></script>
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
